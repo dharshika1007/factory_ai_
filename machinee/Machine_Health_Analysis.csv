@@ -1,0 +1,51 @@
+Machine_ID,Machine_Name,Urgency_Score,Priority,Health_Score,RUL_Days,Recommended_Actions
+M028,Drill_28,62.0,HIGH (Schedule within 48h),48.0,41.0,"Check bearings alignment, check structural mount stiffness."
+M042,Furnace_42,61.2,HIGH (Schedule within 48h),37.0,363.0,"Check bearings alignment, check structural mount stiffness. | Inspect cooling fan and radiator. Clear ventilation pathways."
+M022,PickPlace_22,59.1,HIGH (Schedule within 48h),41.0,225.0,"Check bearings alignment, check structural mount stiffness."
+M013,Grinding_13,56.2,HIGH (Schedule within 48h),45.0,368.0,"Check bearings alignment, check structural mount stiffness."
+M035,Assembly_35,53.6,HIGH (Schedule within 48h),45.4,312.0,"Check bearings alignment, check structural mount stiffness."
+M014,Mixer_14,53.6,HIGH (Schedule within 48h),57.0,194.0,"Check bearings alignment, check structural mount stiffness."
+M005,Conveyor_05,49.6,HIGH (Schedule within 48h),66.8,112.0,Inspect cooling fan and radiator. Clear ventilation pathways.
+M030,Conveyor_30,48.1,HIGH (Schedule within 48h),70.0,90.0,Perform routine cleaning and standard lubrication checks.
+M026,CNC_Mill_26,47.4,HIGH (Schedule within 48h),68.6,281.0,Inspect cooling fan and radiator. Clear ventilation pathways.
+M007,Robot_Arm_07,46.8,HIGH (Schedule within 48h),69.2,375.0,Inspect cooling fan and radiator. Clear ventilation pathways.
+M016,Boiler_16,46.7,HIGH (Schedule within 48h),65.4,179.0,"Check bearings alignment, check structural mount stiffness."
+M015,Pump_15,45.6,HIGH (Schedule within 48h),67.2,334.0,Inspect cooling fan and radiator. Clear ventilation pathways.
+M027,Lathe_27,45.0,HIGH (Schedule within 48h),71.6,186.0,Inspect cooling fan and radiator. Clear ventilation pathways.
+M010,Assembly_10,42.8,MEDIUM (Schedule within 7 Days),61.0,105.0,"Check bearings alignment, check structural mount stiffness."
+M023,Paint_Booth_23,41.1,MEDIUM (Schedule within 7 Days),46.0,356.0,"Check bearings alignment, check structural mount stiffness."
+M008,Compressor_08,40.2,MEDIUM (Schedule within 7 Days),83.8,394.0,Perform routine cleaning and standard lubrication checks.
+M040,Pump_40,39.8,MEDIUM (Schedule within 7 Days),84.6,279.0,Perform routine cleaning and standard lubrication checks.
+M009,Welding_09,39.0,MEDIUM (Schedule within 7 Days),78.6,106.0,Perform routine cleaning and standard lubrication checks.
+M032,Robot_Arm_32,38.1,MEDIUM (Schedule within 7 Days),83.8,381.0,Perform routine cleaning and standard lubrication checks.
+M046,3D_Printer_46,37.1,MEDIUM (Schedule within 7 Days),72.0,388.0,"Check bearings alignment, check structural mount stiffness."
+M050,Forge_50,36.4,MEDIUM (Schedule within 7 Days),62.0,397.0,"Check bearings alignment, check structural mount stiffness."
+M006,Packaging_06,36.2,MEDIUM (Schedule within 7 Days),77.8,282.0,Perform routine cleaning and standard lubrication checks.
+M037,Laser_Cutter_37,36.0,MEDIUM (Schedule within 7 Days),83.8,289.0,Perform routine cleaning and standard lubrication checks.
+M031,Packaging_31,35.9,MEDIUM (Schedule within 7 Days),91.0,99.0,Perform routine cleaning and standard lubrication checks.
+M036,Injection_Molder_36,35.2,MEDIUM (Schedule within 7 Days),53.0,62.0,"Check bearings alignment, check structural mount stiffness."
+M025,Forge_25,34.4,MEDIUM (Schedule within 7 Days),79.6,51.0,Perform routine cleaning and standard lubrication checks.
+M029,Hydraulic_Press_29,33.3,MEDIUM (Schedule within 7 Days),61.0,122.0,"Check bearings alignment, check structural mount stiffness."
+M048,Paint_Booth_48,31.7,MEDIUM (Schedule within 7 Days),57.0,35.0,"Check bearings alignment, check structural mount stiffness."
+M018,Cooling_Tower_18,31.1,MEDIUM (Schedule within 7 Days),65.0,297.0,"Check bearings alignment, check structural mount stiffness."
+M019,Extruder_19,27.0,MEDIUM (Schedule within 7 Days),58.0,202.0,"Check bearings alignment, check structural mount stiffness."
+M011,Injection_Molder_11,25.3,MEDIUM (Schedule within 7 Days),57.0,138.0,"Check bearings alignment, check structural mount stiffness."
+M044,Extruder_44,22.2,MEDIUM (Schedule within 7 Days),91.8,277.0,Perform routine cleaning and standard lubrication checks.
+M021,3D_Printer_21,21.6,MEDIUM (Schedule within 7 Days),84.0,358.0,Perform routine cleaning and standard lubrication checks.
+M033,Compressor_33,21.5,MEDIUM (Schedule within 7 Days),80.2,245.0,Perform routine cleaning and standard lubrication checks.
+M020,Stamping_Press_20,19.6,LOW (Routine Inspection),65.0,132.0,"Check bearings alignment, check structural mount stiffness."
+M017,Furnace_17,19.5,LOW (Routine Inspection),83.2,95.0,Perform routine cleaning and standard lubrication checks.
+M034,Welding_34,15.8,LOW (Routine Inspection),79.6,159.0,Perform routine cleaning and standard lubrication checks.
+M045,Stamping_Press_45,14.4,LOW (Routine Inspection),95.0,31.0,Perform routine cleaning and standard lubrication checks.
+M039,Mixer_39,13.3,LOW (Routine Inspection),82.9,302.0,Perform routine cleaning and standard lubrication checks.
+M043,Cooling_Tower_43,11.6,LOW (Routine Inspection),85.1,188.0,Perform routine cleaning and standard lubrication checks.
+M041,Boiler_41,10.2,LOW (Routine Inspection),92.0,197.0,Perform routine cleaning and standard lubrication checks.
+M001,CNC_Mill_01,9.1,LOW (Routine Inspection),92.0,39.0,Perform routine cleaning and standard lubrication checks.
+M049,Air_Compressor_49,8.6,LOW (Routine Inspection),84.0,270.0,Perform routine cleaning and standard lubrication checks.
+M024,Air_Compressor_24,7.8,LOW (Routine Inspection),95.0,119.0,Perform routine cleaning and standard lubrication checks.
+M004,Hydraulic_Press_04,4.7,LOW (Routine Inspection),95.0,308.0,Perform routine cleaning and standard lubrication checks.
+M002,Lathe_02,4.7,LOW (Routine Inspection),95.0,315.0,Perform routine cleaning and standard lubrication checks.
+M047,PickPlace_47,4.7,LOW (Routine Inspection),95.0,288.0,Perform routine cleaning and standard lubrication checks.
+M003,Drill_03,4.3,LOW (Routine Inspection),95.0,312.0,Perform routine cleaning and standard lubrication checks.
+M038,Grinding_38,4.3,LOW (Routine Inspection),95.0,168.0,Perform routine cleaning and standard lubrication checks.
+M012,Laser_Cutter_12,4.0,LOW (Routine Inspection),95.0,234.0,Perform routine cleaning and standard lubrication checks.

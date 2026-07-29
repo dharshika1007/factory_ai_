@@ -1,0 +1,160 @@
+<!--
+  icons.html
+  AURA Smart Manufacturing AI — Icon Library
+  ─────────────────────────────────────────────────────────────────────────────
+  Loads Font Awesome 6.5 Free via CDN and defines reusable icon CSS helpers.
+  Injected into Streamlit via:  st.markdown(load_icons(), unsafe_allow_html=True)
+  ─────────────────────────────────────────────────────────────────────────────
+  Icon catalogue used in this app:
+    fa-industry          → Factory / Manufacturing (section header, page)
+    fa-file-import       → Telemetry / Upload (sidebar heading)
+    fa-rocket            → Analyze / Run Pipeline (button)
+    fa-robot             → AI / Report Agent (section, button)
+    fa-thermometer-half  → Machine Health Agent (section)
+    fa-brain             → Failure Prediction Agent (section)
+    fa-screwdriver-wrench→ Maintenance Agent (section)
+    fa-bolt              → Production Optimization / Power (section, KPI)
+    fa-star              → Active Node Network (KPI trend)
+    fa-triangle-exclamation → Anomalies / Warning (KPI, alerts)
+    fa-circle-exclamation → Critical Alert (KPI)
+    fa-desktop           → Digital Twin Fleet (table header)
+    fa-sliders           → Simulator (sub-header)
+    fa-calendar-days     → Asset Action Registry (sub-header)
+    fa-plug              → Energy Optimization (sub-header)
+    fa-scale-balanced    → Load Balancing (sub-header)
+    fa-rotate            → Load Transfer Action (info card)
+    fa-chart-line        → Telemetry Dataset Ingested (landing)
+    fa-clipboard-list    → CSV Schema Guidelines (landing)
+    fa-lightbulb         → Info / Tips (info blocks)
+    fa-hand-point-right  → Action prompts (landing info)
+    fa-download          → Download buttons
+    fa-check-circle      → Success indicators
+<!-- Font Awesome 6.5.0 Free (CDN) loaded via @import for Streamlit compatibility -->
+<style>
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+
+  /* ─── Global Scrollbar Styling ────────────────────────────────────────── */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0b0f19 !important;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1e293b !important;
+    border-radius: 10px !important;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #38bdf8 !important;
+  }
+
+  /* ─── Base icon helper ──────────────────────────────────────────────────── */
+  .aura-icon {
+    display: inline-block;
+    margin-right: 7px;
+    vertical-align: middle;
+    font-size: 1em;
+    line-height: 1;
+  }
+
+  /* Size variants */
+  .aura-icon.sm  { font-size: 0.85em; }
+  .aura-icon.lg  { font-size: 1.25em; }
+  .aura-icon.xl  { font-size: 1.5em;  }
+
+  /* Colour semantic aliases — updated for dark theme */
+  .aura-icon.c-dark    { color: #f8fafc !important; }
+  .aura-icon.c-muted   { color: #94a3b8 !important; }
+  .aura-icon.c-success { color: #10b981 !important; }
+  .aura-icon.c-warning { color: #fbbf24 !important; }
+  .aura-icon.c-danger  { color: #ef4444 !important; }
+  .aura-icon.c-info    { color: #38bdf8 !important; }
+  .aura-icon.c-purple  { color: #818cf8 !important; }
+
+  /* Inherit the parent element's colour (e.g. inside coloured KPI trends) */
+  .aura-icon.c-inherit { color: inherit !important; }
+
+  /* ─── Section title icon sizing ─────────────────────────────────────────── */
+  .section-title .aura-icon {
+    font-size: 1.1em;
+    margin-right: 10px;
+  }
+
+  /* ─── KPI trend icon sizing ──────────────────────────────────────────────  */
+  .kpi-trend .aura-icon {
+    font-size: 0.9em;
+  }
+
+  /* ─── Sidebar heading icon ───────────────────────────────────────────────  */
+  .sidebar-heading .aura-icon {
+    font-size: 1em;
+    margin-right: 8px;
+  }
+
+  /* ─── Sub-section heading icon (h5 level) ───────────────────────────────  */
+  h5 .aura-icon, .sub-heading .aura-icon {
+    font-size: 0.95em;
+    margin-right: 6px;
+  }
+
+  /* ─── Simulator diagnosis card icon ─────────────────────────────────────  */
+  .diag-card-icon {
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 1.1em;
+    vertical-align: middle;
+    color: #a855f7 !important;
+  }
+
+  /* ─── Info / action transfer card icon ──────────────────────────────────  */
+  .transfer-icon {
+    display: inline-block;
+    margin-right: 6px;
+    font-size: 1em;
+    vertical-align: middle;
+    color: #3b82f6 !important;
+  }
+
+  /* ─── Glowing Status Dots ─────────────────────────────────────────────── */
+  .status-dot-glowing {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    margin-right: 6px;
+  }
+  .status-dot-good {
+    background-color: #10b981;
+    box-shadow: 0 0 8px #10b981;
+    animation: pulse-green 2s infinite;
+  }
+  .status-dot-fair {
+    background-color: #f59e0b;
+    box-shadow: 0 0 8px #f59e0b;
+    animation: pulse-orange 2s infinite;
+  }
+  .status-dot-critical {
+    background-color: #ef4444;
+    box-shadow: 0 0 8px #ef4444;
+    animation: pulse-red 2s infinite;
+  }
+  
+  @keyframes pulse-green {
+    0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+    70% { box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+  }
+  @keyframes pulse-orange {
+    0% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7); }
+    70% { box-shadow: 0 0 0 6px rgba(245, 158, 11, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
+  }
+  @keyframes pulse-red {
+    0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+    70% { box-shadow: 0 0 0 6px rgba(239, 68, 68, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+  }
+</style>
+
